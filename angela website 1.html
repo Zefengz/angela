@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zefeng's Website for Angela</title>
+    <style>
+      body {
+        background-color: pink;
+      }
+      #container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        color: white;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+        color: white;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    </style>
+    <script>
+      function playAudio() {
+        const audioElement = document.getElementById("background-music");
+        audioElement.volume = 0.10;
+        audioElement.muted = false;
+        audioElement.play();
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>My Queen Angela Xue</h1>
+      <p>I love you so much</p>
+      <img src="C:\Users\Zefeng\Pictures\angela_picture.jpg" alt="Picture of Angela">
+     <button onclick="playAudio()">Play Music</button>
+      <audio id="background-music" loop muted>
+        <source src="F:\Downloads\babe song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </body>
+</html>
